@@ -1,0 +1,520 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    background-color: #2B3648!important;
+}
+.navbarSec{
+    background-color: #212936;
+    box-shadow: 0 0 15px #060606e6;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bars > svg{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.nav-menu{
+    background-color: #212936;
+    width: 225px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+.nav-menu.active{
+    left: 0;
+    transition: 350ms;
+    z-index: 1;
+    box-shadow: 0 0 35px #000000e3;
+}
+.nav-menu-items{
+    transform: translate(-20px, 100px);
+}
+.nav-menu-items > li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 20px;
+    display: flex;
+}
+.toggler{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: #ffffff;
+    font-size: 2rem;
+    transition: 0.5s ease;
+}
+.toggler:hover{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.nav-menu-items > li > a{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+li > a > svg{
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+/* OVERVIEW CARDS */
+
+.mainCards{
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px;
+    justify-content: left;
+    margin: 30px 40px;
+}
+.mainCards .Cards{
+    background-color: #212936;
+    width: 200px;
+    height: 170px;
+    padding: 0 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.Cards svg{
+    font-size: 50px;
+    margin-top: 20px;
+    color: #56657F;
+}
+.texts{
+    margin: 15px 0;
+}
+.texts p{
+    margin-bottom: 0;
+    color: #56657F;
+}
+.texts h4{
+    font-weight: 700;
+    font-size: 30px;
+    color: #56657F;
+}
+.Cards:hover{
+    background-color: #1976D2;
+    color: #ffffff!important;
+    cursor: pointer;
+}
+.Cards:hover h4{
+    color: #ffffff!important;
+}
+.Cards:hover svg{
+    color: #ffffff!important;
+}
+.Cards:hover p{
+    color: #BAD6F1!important;
+}
+
+/* Calendar */
+
+.react-calendar{
+    position: absolute;
+    right: 30px;
+    top: 88px;
+    background-color: #212936!important;
+    color: #ffffff;
+    border: none!important;
+    border-radius: 5px;
+}
+
+/* Calendar */
+
+/* STATISTICS (Task Completion, Activity boxses */
+
+.statistics{
+    display: flex;
+}
+
+/** Task Completion chart box **/
+
+.box{
+    background-color: #212936;
+    width: 890px;
+    height: 475px;
+    margin: 20px 39px;
+    border-radius: 5px;
+}
+.box p{
+    margin: 0 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #56657F;
+}
+.recharts-responsive-container{
+    width: 870px!important;
+    height: 350px!important;
+    margin-top: 50px;
+}
+
+/** Task Completion chart box **/
+
+/** Activity chart box **/
+
+.activityBox{
+    background-color: #212936;
+    width: 351px;
+    height: 375px;
+    margin-top: 120px;
+    border-radius: 5px;
+}
+.activityBox .recharts-responsive-container{
+    width: 330px!important;
+    height: 250px!important;
+}
+.activityBox p{
+    margin: 0 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #56657F;
+}
+
+/* STATISTICS (Task Completion, Activity boxses */
+
+/* Clients */
+
+.usersList{
+    background-color: #212936;
+    width: 350px;
+    height: 290px;
+    margin: 10px 40px;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.usersList .usersTitle{
+    font-size: 25px;
+    color: #56657F;
+}
+.users .head{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding: 5px;
+}
+.head:hover{
+    background-color: #2e394c;
+    cursor: pointer;
+}
+.head img{
+    width: 15%;
+    height: 10%;
+}
+.head .names{
+    text-align: right;
+}
+.head .names h4{
+    margin: 0;
+    color: #8997B1;
+}
+.names p{
+    color: #56657F;
+}
+
+/* Clients */
+
+/** Activity chart box **/
+
+.clients{
+    display: flex;
+    margin-bottom: 30px;
+}
+.clients .states{
+    background-color: #212936;
+    width: 890px;
+    height: 290px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.clients .title{
+    margin: 0 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #56657F;
+}
+.clients .states .recharts-responsive-container{
+    width: 850px!important;
+    height: 200px!important;
+    margin: 30px 25px;
+}
+
+/** TASKS **/
+
+.tasksTitle{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+}
+.formSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.formSection button{
+    margin: 0 15px;
+}
+.formSection input{
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    outline: none;
+    transition: 0.5s ease;
+    padding: 10px;
+    margin: 15px;
+    color: #ffffff;
+}
+.formSection input:focus{
+    box-shadow: 5px 15px 15px #1b2a38;
+}
+.formSection button{
+    background-color: yellowgreen;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+}
+.col-md-4{
+    margin-top: 70px;
+}
+.col-md-4 .MuiCard-root{
+    width: 320px;
+    height: 140px;
+    padding: 10px 20px;
+    background-color: #6A6DCD;
+    color: #ffffff;
+}
+.MuiCard-root button{
+    outline: none;
+    background-color: rgb(255, 58, 140);
+    color: #ffffff;
+    border: none;
+}
+
+.clientTitle{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+}
+table{
+    background-color: #212936;
+    margin: 30px 0 30px;
+}
+thead tr{
+    color: #ffffff;
+}
+tbody tr{
+    color: #e4e4e4;
+}
+tbody tr:hover{
+    background-color: #1976D2!important;
+    color: #ffffff!important;
+    cursor: pointer;
+}
+
+
+/** RESPONSIVE **/
+
+@media screen and (max-width: 410px){
+    .mainCards{
+        display: inline;
+        margin: 0;
+    }
+    .mainCards .Cards{
+        width: 80%;
+        margin: 40px;
+    }
+    .react-calendar{
+        position: absolute;
+        top: 940px;
+        right: 40px;
+        width: 80%!important;
+    }
+    .statistics{
+        display: inline;
+    }
+    .statistics .box{
+        width: 90%;
+        height: 475px;
+        margin: 380px 20px 40px;
+    }
+    .box .recharts-responsive-container{
+        width: 310px!important;
+    }
+    .activityBox{
+        width: 90%;
+        margin: 20px;
+    }
+    .activityBox .recharts-responsive-container{
+        width: 310px!important;
+    }
+    .clients{
+        display: inline;
+    }
+    .clients .usersList, .states{
+        margin: 20px!important;
+        width: 90%!important;
+    }
+    .clients .states .recharts-responsive-container{
+        width: 300px!important;
+    }
+
+
+    /** TASKS **/
+
+    .formSection{
+        display: inline;
+    }
+    .formSection input{
+        margin: 10px 60px;
+        width: 65%;
+    }
+    .formSection button{
+        margin: 10px 130px;
+    }
+
+    .col-md-4{
+        margin-top: 20px;
+    }
+    .col-md-4 .MuiCard-root{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 370px){
+    .mainCards{
+        display: inline;
+        margin: 0;
+    }
+    .mainCards .Cards{
+        width: 275px;
+        margin: 40px;
+    }
+    .react-calendar{
+        position: absolute;
+        top: 940px;
+        right: 45px;
+        width: 275px!important;
+    }
+    .statistics{
+        display: inline;
+    }
+    .statistics .box{
+        width: 330px;
+        height: 475px;
+        margin: 380px 15px 40px;
+    }
+    .box .recharts-responsive-container{
+        width: 310px!important;
+    }
+    .activityBox{
+        width: 330px;
+        margin: 15px;
+    }
+    .activityBox .recharts-responsive-container{
+        width: 290px!important;
+    }
+    .clients{
+        display: inline;
+    }
+    .clients .usersList, .states{
+        margin: 15px!important;
+        width: 330px!important;
+    }
+    .clients .states .recharts-responsive-container{
+        width: 290px!important;
+    }
+
+
+    /** TASKS **/
+
+    .formSection{
+        display: inline;
+    }
+    .formSection input{
+        margin: 10px 60px;
+        width: 65%;
+    }
+    .formSection button{
+        margin: 10px 130px;
+    }
+
+    .col-md-4{
+        margin-top: 20px;
+    }
+    .col-md-4 .MuiCard-root{
+        width: 100%;
+    }
+}
+@media (min-width: 315px) and (max-width: 330px){
+    .mainCards{
+        display: inline;
+        margin: 0;
+    }
+    .mainCards .Cards{
+        width: 240px;
+        margin: 40px;
+    }
+    .react-calendar{
+        position: absolute;
+        top: 940px;
+        right: 45px;
+        width: 230px!important;
+    }
+    .statistics{
+        display: inline;
+    }
+    .statistics .box{
+        width: 290px;
+        height: 475px;
+        margin: 380px 15px 40px;
+    }
+    .box .recharts-responsive-container{
+        width: 270px!important;
+    }
+    .activityBox{
+        width: 290px;
+        margin: 15px;
+    }
+    .activityBox .recharts-responsive-container{
+        width: 290px!important;
+    }
+    .clients{
+        display: inline;
+    }
+    .clients .usersList, .states{
+        margin: 15px!important;
+        width: 290px!important;
+    }
+    .clients .states .recharts-responsive-container{
+        width: 240px!important;
+    }
+
+
+    /** TASKS **/
+
+    .formSection{
+        display: inline;
+    }
+    .formSection input{
+        margin: 10px 60px;
+    }
+    .formSection button{
+        margin: 10px 110px;
+    }
+
+    .col-md-4{
+        margin-top: 20px;
+    }
+    .col-md-4 .MuiCard-root{
+        width: 290px;
+    }
+}
